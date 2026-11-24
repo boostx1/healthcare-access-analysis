@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healthcare Capacity &amp; Financing</title>
+<style>
+:root{color-scheme:light;--ink:#163633;--muted:#4e6562;--paper:#f6f5ef;--line:#ccdad2;--dark:#103e39;--bed:#147164;--share:#976018}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Source Sans 3",Inter,Arial,sans-serif}
+main{max-width:1080px;margin:auto;padding:40px 32px 28px}
+a{color:#095f56;text-underline-offset:3px}
+h1,h2,p{margin:0}
+.hero{background:var(--dark);color:#fff;padding:34px 38px;border-radius:14px}
+.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:bold;color:#c2e4d4}
+.hero h1{font:normal clamp(2.4rem,5.6vw,4.5rem)/1.03 "PT Serif",Georgia,serif;letter-spacing:-.04em;max-width:780px;margin:13px 0 18px}
+.hero p:last-child{color:#e2ede7;max-width:680px;font-size:1.05rem}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:31px 0 16px}
+h2{font:normal clamp(1.5rem,3.3vw,2.1rem)/1.2 "PT Serif",Georgia,serif;letter-spacing:-.025em}
+label{font-size:.88rem;font-weight:bold}
+select{margin-left:6px;padding:8px 30px 8px 9px;font:inherit;background:white;color:var(--ink);border:1px solid #67847f;border-radius:5px}
+a:focus-visible,select:focus-visible{outline:3px solid #ab6300;outline-offset:3px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.metric{border:1px solid var(--line);border-radius:8px;padding:13px 16px;background:#fff}
+.metric b{display:block;font-size:1.9rem;line-height:1.25;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.metric span{font-size:.84rem;color:var(--muted)}
+.note,.footer{color:var(--muted);font-size:.88rem}
+.note{margin:9px 0 19px}
+.tablebox{background:#fff;border:1px solid var(--line);border-radius:9px;padding:0 18px}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+caption{text-align:left;font-weight:bold;font-size:1.04rem;padding:13px 0 4px}
+th,td{padding:11px 9px;text-align:left;border-bottom:1px solid #dce4de}
+thead th{font-size:.79rem;color:var(--muted);vertical-align:bottom}
+th:first-child{padding-left:0;width:32%}
+th:last-child,td:last-child{padding-right:0}
+tbody tr:last-child>*{border-bottom:0}
+tbody th{font-size:.94rem}
+.value{font-weight:bold;font-variant-numeric:tabular-nums;font-size:.9rem}
+.track{height:5px;background:#e5ede7;margin:4px 0 0;display:block;max-width:94%;border-radius:10px;overflow:hidden}
+.track i{height:100%;display:block;background:var(--bed)}
+.share i{background:var(--share)}
+.missing{font-size:.82rem;color:var(--muted)}
+.footer{margin:20px 0 0;padding-top:15px;border-top:1px solid var(--line)}
+.footer p+p{margin-top:7px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+[hidden]{display:none!important}
+@media(max-width:620px){main{padding:16px 12px}
+.hero{padding:23px 19px}
+.toolbar{margin-top:21px;align-items:flex-start}
+.metrics{gap:5px}
+.metric{padding:9px 8px}
+.metric b{font-size:1.45rem}
+.metric span{font-size:.76rem;line-height:1.2;display:block}
+.tablebox{padding:0 9px}
+th,td{padding:9px 5px}
+tbody th{font-size:.84rem}
+.hero p:last-child{font-size:.94rem}
+.toolbar label{display:flex;flex-direction:column;gap:2px}
+select{margin:0}
+}
+
+</style></head>
+<body><main><header class="hero"><p class="eyebrow">Cross-country health indicators</p><h1>Healthcare Capacity &amp; Financing</h1><p>How do hospital bed supply and the household share of health spending compare across three Gulf and three Nordic countries?</p></header>
+<div class="toolbar"><h2>Country comparison</h2><label id="year-control" hidden>Reporting year <select id="year" aria-controls="results">{{OPTIONS}}</select></label></div>
+<noscript><p>This page shows the latest complete comparison. Enable JavaScript to select another year.</p></noscript>
+<div id="results">{{PANELS}}</div><span id="status" class="sr" role="status"></span>
+<footer class="footer"><p>Bed density describes national inpatient supply. The spending measure is the share of national current health expenditure paid directly by households. Provider occupancy, waiting times and prices require separate local data.</p><p>Sources: WHO and World Bank, World Development Indicators, snapshot updated {{UPDATED}}. <a href="https://data.worldbank.org/indicator/SH.MED.BEDS.ZS">Hospital beds</a> · <a href="https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS">Out-of-pocket spending</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p></footer>
+</main><script>
+const selector = document.getElementById('year');
+document.getElementById('year-control').hidden = false;
+function showYear() {
+  for (const panel of document.querySelectorAll('[data-year]')) panel.hidden = panel.dataset.year !== selector.value;
+  document.getElementById('status').textContent = `Showing ${selector.value} country comparison.`;
+}
+selector.addEventListener('change', showYear);
+showYear();
+</script></body></html>

@@ -1,0 +1,128 @@
+{
+  "panel_country_years": 60,
+  "source_observations": 120,
+  "complete_pairs": 54,
+  "latest_complete_year": 2022,
+  "complete_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2022
+  ],
+  "missing_observations": [
+    {
+      "iso3": "ARE",
+      "year": 2023,
+      "code": "SH.MED.BEDS.ZS"
+    },
+    {
+      "iso3": "DNK",
+      "year": 2014,
+      "code": "SH.MED.BEDS.ZS"
+    },
+    {
+      "iso3": "FIN",
+      "year": 2023,
+      "code": "SH.MED.BEDS.ZS"
+    },
+    {
+      "iso3": "QAT",
+      "year": 2020,
+      "code": "SH.MED.BEDS.ZS"
+    },
+    {
+      "iso3": "QAT",
+      "year": 2023,
+      "code": "SH.MED.BEDS.ZS"
+    },
+    {
+      "iso3": "SWE",
+      "year": 2023,
+      "code": "SH.MED.BEDS.ZS"
+    }
+  ],
+  "annual_coverage": [
+    {
+      "year": 2014,
+      "expected_pairs": 6,
+      "bed_values": 5,
+      "financing_values": 6,
+      "complete_pairs": 5
+    },
+    {
+      "year": 2015,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2016,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2017,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2018,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2019,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2020,
+      "expected_pairs": 6,
+      "bed_values": 5,
+      "financing_values": 6,
+      "complete_pairs": 5
+    },
+    {
+      "year": 2021,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2022,
+      "expected_pairs": 6,
+      "bed_values": 6,
+      "financing_values": 6,
+      "complete_pairs": 6
+    },
+    {
+      "year": 2023,
+      "expected_pairs": 6,
+      "bed_values": 2,
+      "financing_values": 6,
+      "complete_pairs": 2
+    }
+  ],
+  "passed_checks": [
+    "snapshot SHA-256",
+    "indicator and country identity",
+    "complete source grid",
+    "unique country-year-indicator keys",
+    "foreign keys",
+    "value ranges",
+    "database integrity"
+  ]
+}

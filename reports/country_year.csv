@@ -1,0 +1,61 @@
+iso3,country,peer_group,year,beds_per_1000,oop_share_pct
+DNK,Denmark,Nordic,2014,,13.33925629
+FIN,Finland,Nordic,2014,4.53,17.63744736
+QAT,Qatar,Gulf,2014,1.08,5.6476922
+SAU,Saudi Arabia,Gulf,2014,2.34,13.13586998
+SWE,Sweden,Nordic,2014,2.54,14.94266987
+ARE,United Arab Emirates,Gulf,2014,1.29,17.807827
+DNK,Denmark,Nordic,2015,2.53,13.45859432
+FIN,Finland,Nordic,2015,4.28,18.62889671
+QAT,Qatar,Gulf,2015,1.01,5.31610537
+SAU,Saudi Arabia,Gulf,2015,2.32,14.38336658
+SWE,Sweden,Nordic,2015,2.44,15.03159618
+ARE,United Arab Emirates,Gulf,2015,1.43,17.78964996
+DNK,Denmark,Nordic,2016,2.6,13.52142334
+FIN,Finland,Nordic,2016,3.97,19.27291298
+QAT,Qatar,Gulf,2016,1.01,6.27973223
+SAU,Saudi Arabia,Gulf,2016,2.31,14.45141888
+SWE,Sweden,Nordic,2016,2.34,14.63337803
+ARE,United Arab Emirates,Gulf,2016,1.39,15.99159431
+DNK,Denmark,Nordic,2017,2.61,13.69360352
+FIN,Finland,Nordic,2017,3.75,19.04597092
+QAT,Qatar,Gulf,2017,0.94,6.88137674
+SAU,Saudi Arabia,Gulf,2017,2.37,14.3235302
+SWE,Sweden,Nordic,2017,2.21,14.23645401
+ARE,United Arab Emirates,Gulf,2017,1.46,11.41661835
+DNK,Denmark,Nordic,2018,2.61,13.82407379
+FIN,Finland,Nordic,2018,3.61,18.43068314
+QAT,Qatar,Gulf,2018,1.03,6.73806286
+SAU,Saudi Arabia,Gulf,2018,2.48,15.89835358
+SWE,Sweden,Nordic,2018,2.13,14.21954441
+ARE,United Arab Emirates,Gulf,2018,1.6,12.69611263
+DNK,Denmark,Nordic,2019,2.59,13.79444408
+FIN,Finland,Nordic,2019,3.35,17.42399406
+QAT,Qatar,Gulf,2019,1.12,6.3903017
+SAU,Saudi Arabia,Gulf,2019,2.53,11.40407372
+SWE,Sweden,Nordic,2019,2.07,13.9244051
+ARE,United Arab Emirates,Gulf,2019,1.83,12.23162079
+DNK,Denmark,Nordic,2020,2.59,13.37706089
+FIN,Finland,Nordic,2020,2.75,16.46622276
+QAT,Qatar,Gulf,2020,,5.89859581
+SAU,Saudi Arabia,Gulf,2020,2.54,10.08158016
+SWE,Sweden,Nordic,2020,2.05,12.9202652
+ARE,United Arab Emirates,Gulf,2020,1.91,11.21054459
+DNK,Denmark,Nordic,2021,2.51,13.30354118
+FIN,Finland,Nordic,2021,2.76,16.66294861
+QAT,Qatar,Gulf,2021,1.3,6.55757952
+SAU,Saudi Arabia,Gulf,2021,2.46,10.15629482
+SWE,Sweden,Nordic,2021,2.0,13.09276485
+ARE,United Arab Emirates,Gulf,2021,1.88,10.46759415
+DNK,Denmark,Nordic,2022,2.48,13.18761063
+FIN,Finland,Nordic,2022,2.61,16.0982132
+QAT,Qatar,Gulf,2022,1.25,7.7333827
+SAU,Saudi Arabia,Gulf,2022,2.44,12.78343868
+SWE,Sweden,Nordic,2022,1.9,13.12999439
+ARE,United Arab Emirates,Gulf,2022,1.87,9.71845818
+DNK,Denmark,Nordic,2023,2.43,13.97692299
+FIN,Finland,Nordic,2023,,14.09493542
+QAT,Qatar,Gulf,2023,,7.42945814
+SAU,Saudi Arabia,Gulf,2023,2.41,14.11603928
+SWE,Sweden,Nordic,2023,,12.95748615
+ARE,United Arab Emirates,Gulf,2023,,9.66616821

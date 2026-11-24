@@ -1,0 +1,23 @@
+{
+  "period": [2014, 2023],
+  "downloaded": "2026-11-24",
+  "source_update": "2026-11-11",
+  "country_groups": {"ARE": "Gulf", "QAT": "Gulf", "SAU": "Gulf", "DNK": "Nordic", "FIN": "Nordic", "SWE": "Nordic"},
+  "licence": "https://creativecommons.org/licenses/by/4.0/",
+  "files": {
+    "hospital_beds.json": {
+      "sha256": "a5308235382e0f9eef99454ad5353c12c918e1deb7bcb53d59b0b1a201497a3c",
+      "url": "https://api.worldbank.org/v2/country/ARE;SWE;DNK;FIN;SAU;QAT/indicator/SH.MED.BEDS.ZS?source=2&date=2014:2023&format=json&per_page=1000",
+      "producer": "WHO, supplemented by country sources, distributed through the World Bank's World Development Indicators",
+      "transformation": "Unmodified API response, one page."
+    },
+    "household_financing.csv": {
+      "sha256": "f994adbdb6e61835eadfcaa8b1fd92917ceb1d8a9336e16702d0678dbbdb9f3b",
+      "url": "https://api.worldbank.org/v2/en/indicator/SH.XPD.OOPC.CH.ZS?downloadformat=csv",
+      "archive_sha256": "2ff530c544de8f1ccc96bb2764e3c663afa611d2b12f1b67fd6d3f9c79db811b",
+      "archive_member": "API_SH.XPD.OOPC.CH.ZS_DS2_en_csv_v2_62345.csv",
+      "producer": "WHO Global Health Expenditure Database, distributed through the World Bank's World Development Indicators",
+      "transformation": "From the wide CSV in the archive, remove its first four descriptive lines. Keep the six selected ISO3 rows, country name and code, indicator code, and 2014 through 2023 columns. Sort by ISO3, use UTF-8 and LF, preserve the source numeric strings."
+    }
+  }
+}
